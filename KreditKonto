@@ -1,0 +1,8 @@
+class KreditKonto extends BankKonto{
+ int kreditlimit;
+ //...
+ void abheben(int betrag){
+  assert(betrag<=kontostand+kreditlimit));
+  kontostand-=betrag;
+ }
+}
