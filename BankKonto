@@ -1,0 +1,17 @@
+class BankKonto{
+ int kontostand;
+ 
+ BankKonto(int kontostand){
+  this.kontostand=kontostand;
+ }
+ int kontostand(){
+  return kontostand;
+ }
+ void abheben(int betrag){
+  assert(betrag<=kontostand);
+  kontostand-=betrag;
+ }
+ void einzahlen(int betrag){
+  kontostand+=betrag;
+ }
+}
