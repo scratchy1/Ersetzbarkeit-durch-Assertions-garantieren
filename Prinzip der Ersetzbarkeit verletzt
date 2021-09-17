@@ -1,0 +1,9 @@
+class SparKonto extends BankKonto{
+ @Override
+ void überweisen(int betrag, BankKonto zielkonto){
+  assert(false);
+ }
+ //...
+}
+/* Die Vorbedingung für den Aufruf der Operation wird radikal eingeschränkt, es ist nun nicht mehr zulässig, die
+ * Operation auf einem Exemplar von SparKonto aufzurufen. Sparbücher lassen sich weder überziehen noch kann man von ihnen aus überweisen.*/
